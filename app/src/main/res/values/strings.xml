@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Junglezon</string>
+    <string name="loginUsernameHint">Enter Username</string>
+    <string name="loginPasswordHint">Enter Password</string>
+    <string name="loginLogin">Login</string>
+    <string name="loginCreateAccount">Create Account</string>
+    <string name="noLogsMessage">No Records</string>
+    <string name="loginNewUser">New User?</string>
+    <string name="userDisplay">Blank</string>
+    <string name="mainSearchItems">Search Items</string>
+    <string name="maindAccountDetails">Account Details</string>
+    <string name="mainIsAdmin">Admin Area</string>
+    <string name="mainLogOut">Log Out</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>
