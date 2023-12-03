@@ -1,3 +1,10 @@
+/**
+ * @title LoginActivity
+ * @author Eric Rodriguez
+ * @date 12-03-2023
+ * @abstract This activity is the Login page for the Junglezon app
+ */
+
 package com.daclink.androidjunglezon;
 
 import androidx.appcompat.app.AppCompatActivity;

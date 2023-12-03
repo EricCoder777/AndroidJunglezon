@@ -1,3 +1,10 @@
+/**
+ * @title User
+ * @author Eric Rodriguez
+ * @date 12-03-2023
+ * @abstract This class defines the Users in the database
+ */
+
 package com.daclink.androidjunglezon;
 
 import androidx.room.Entity;

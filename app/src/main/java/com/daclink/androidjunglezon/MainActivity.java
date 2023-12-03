@@ -1,3 +1,10 @@
+/**
+ * @title MainActivity
+ * @author Eric Rodriguez
+ * @date 12-03-2023
+ * @abstract This activity is the landing page for the Junglezon app
+ */
+
 package com.daclink.androidjunglezon;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,10 +62,10 @@ public class MainActivity extends AppCompatActivity {
         mSearchItems = findViewById(R.id.mainSearchItems);
         mAccountDetails = findViewById(R.id.mainAccountDetails);
         mIsadmin = findViewById(R.id.mainIsAdmin);
-//        boolean bool = mUser.getAdmin();
-//        if(bool) {
-//            mIsadmin.setVisibility(View.VISIBLE);
-//        }
+        boolean bool = mUser.getAdmin();
+        if(bool) {
+            mIsadmin.setVisibility(View.VISIBLE);
+        }
         mLogOut = findViewById(R.id.mainLogOut);
         mLogOut.setOnClickListener(new View.OnClickListener() {
             @Override

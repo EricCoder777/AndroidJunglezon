@@ -1,3 +1,10 @@
+/**
+ * @title JugleDAO
+ * @author Eric Rodriguez
+ * @date 12-103-2023
+ * @abstract This interface initializes the SQLite commands for the database in Junglezon app
+ */
+
 package com.daclink.androidjunglezon.db;
 
 import androidx.room.Dao;

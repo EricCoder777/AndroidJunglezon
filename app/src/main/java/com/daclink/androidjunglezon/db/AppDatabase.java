@@ -1,3 +1,9 @@
+/**
+ * @title AppDatabase
+ * @author Eric Rodriguez
+ * @date 12-03-2023
+ * @abstract This abstract class initialized the database for Junglezon app
+ */
 package com.daclink.androidjunglezon.db;
 
 import androidx.room.Database;
