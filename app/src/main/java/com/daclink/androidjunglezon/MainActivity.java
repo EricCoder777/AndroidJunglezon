@@ -62,9 +62,12 @@ public class MainActivity extends AppCompatActivity {
         mSearchItems = findViewById(R.id.mainSearchItems);
         mAccountDetails = findViewById(R.id.mainAccountDetails);
         mIsadmin = findViewById(R.id.mainIsAdmin);
+
         boolean bool = mUser.getAdmin();
         if(bool) {
             mIsadmin.setVisibility(View.VISIBLE);
+        }else{
+            mIsadmin.setVisibility(View.INVISIBLE);
         }
         mLogOut = findViewById(R.id.mainLogOut);
         mLogOut.setOnClickListener(new View.OnClickListener() {

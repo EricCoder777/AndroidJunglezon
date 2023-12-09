@@ -70,7 +70,7 @@
         android:text="@string/mainIsAdmin"
         android:textSize="16sp"
         android:background="@drawable/buttoncustomize"
-        android:visibility="invisible"
+
         app:layout_constraintTop_toBottomOf="@id/mainAccountDetails"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
