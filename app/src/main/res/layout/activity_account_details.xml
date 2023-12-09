@@ -6,4 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".AccountDetails">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="392dp"
+        android:layout_height="94dp"
+        android:gravity="center"
+        android:text="username Account Details"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="253dp"
+        android:layout_height="267dp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="146dp"
+        android:layout_height="76dp"
+        android:text="Cancel Selected Item"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="146dp"
+        android:layout_height="76dp"
+        android:text="Return to Home"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="580dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
