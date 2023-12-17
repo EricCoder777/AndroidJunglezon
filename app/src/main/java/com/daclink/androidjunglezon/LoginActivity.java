@@ -62,6 +62,14 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        mCreateAccountButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = CreateAccount.intentFactory(getApplicationContext());
+                startActivity(intent);
+            }
+        });
+
         mJungleDAO = Room.databaseBuilder(this, AppDatabase.class, AppDatabase.DB_NAME)
                 .allowMainThreadQueries()
                 .build()
