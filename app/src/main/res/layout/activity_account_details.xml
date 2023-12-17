@@ -17,18 +17,11 @@
         tools:layout_editor_absoluteY="29dp" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/acctRecycler"
         android:layout_width="253dp"
         android:layout_height="267dp"
         tools:layout_editor_absoluteX="79dp"
         tools:layout_editor_absoluteY="148dp" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="146dp"
-        android:layout_height="76dp"
-        android:text="Cancel Selected Item"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="469dp" />
 
     <Button
         android:id="@+id/button11"

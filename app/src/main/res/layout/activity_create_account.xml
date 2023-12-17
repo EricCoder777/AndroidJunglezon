@@ -6,53 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".CreateAccount">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="123dp"
-        android:layout_height="74dp"
-        android:text="Return to Home"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="594dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="123dp"
-        android:layout_height="74dp"
-        android:text="Create Account"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="453dp" />
-
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="246dp"
-        android:layout_height="75dp"
+        android:id="@+id/caCreateAcct"
+        android:layout_width="373dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:gravity="center"
-        android:text="Create Account"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="48dp" />
+        android:fadeScrollbars="true"
+        android:scrollbars = "vertical"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/loginPasswordHint"
-        android:inputType="textPassword"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="323dp" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/caUsername"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/loginUsernameHint"
         android:inputType="textPersonName"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="239dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caCreateAcct" />
+
+
+    <EditText
+        android:id="@+id/caPassword"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/loginPasswordHint"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caUsername" />
+
+    <Button
+        android:id="@+id/caCreateAcctButton"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/buttoncustomize"
+        android:text="Create Account"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caPassword" />
+
+    <Button
+        android:id="@+id/caReturnButton"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttoncustomize"
+        android:text="Return to Log In"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caCreateAcctButton" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

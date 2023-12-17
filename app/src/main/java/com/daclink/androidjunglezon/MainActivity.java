@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mMainDisplay;
     private TextView mUserDisplay;
     private Button mSearchItems;
+    private Button mCancelOrder;
     private Button mAccountDetails;
     private Button mIsadmin;
     private Button mLogOut;
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 .getJungleDAO();
 
         userCheck();
-
+        itemCheck();
         userLogin(mUserID);
 
 
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         mUserDisplay = findViewById(R.id.mainUserDisplay);
         mUserDisplay.setText("Welcome " + mUser.getUserName() + "!");
         mSearchItems = findViewById(R.id.mainSearchItems);
+        mCancelOrder =findViewById(R.id.mainCancelOrder);
         mAccountDetails = findViewById(R.id.mainAccountDetails);
         mIsadmin = findViewById(R.id.mainIsAdmin);
 
@@ -81,9 +83,26 @@ public class MainActivity extends AppCompatActivity {
                 userCheck();
             }
         });
+        mSearchItems.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = SearchItems.intentFactory(getApplicationContext());
+                startActivity(intent);
+            }
+        });
 
 
 
+
+    }
+
+    private void itemCheck() {
+        Item firstItem = new Item("Shoes", 9.99, 2, "Shiny new shoes");
+        Item secondItem = new Item("Socks", 2.99, 10, "Comfy new socks");
+        Item thirdItem = new Item("T-Shirt", 11.99, 1, "Sparkly new t-shirt");
+        Item fourthItem = new Item("Pants", 12.99, 3, "Glittery new pants");
+
+        mJungleDAO.insert(firstItem,secondItem,thirdItem,fourthItem);
     }
 
     private void userCheck(){

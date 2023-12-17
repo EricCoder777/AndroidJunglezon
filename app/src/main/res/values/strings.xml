@@ -12,4 +12,5 @@
     <string name="mainIsAdmin">Admin Area</string>
     <string name="mainLogOut">Log Out</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="mainCancelOrder">Cancel Order</string>
 </resources>
