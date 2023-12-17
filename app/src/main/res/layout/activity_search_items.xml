@@ -6,4 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".SearchItems">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="241dp"
+        android:layout_height="241dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Search Items"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="163dp"
+        android:layout_height="59dp"
+        android:text="Pick For Me"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="163dp"
+        android:layout_height="59dp"
+        android:text="BUY SELECTED ITEM"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="549dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="163dp"
+        android:layout_height="59dp"
+        android:text="Return to Home"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="640dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="329dp"
+        android:layout_height="83dp"
+        android:gravity="center"
+        android:text="Find items by Name"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="32dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
